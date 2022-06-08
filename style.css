@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --accent-color: #342259;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* Navbar  */
+nav {
+  background-color: rgba(255, 255, 255, 0.93);
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  width: 100%;
+  border-bottom: 1px solid rgba(23, 16, 40, 0.104);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  display: inline-block;
+  color: #747474;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: 25px 10px;
+  padding-left: 4px;
+}
+
+.nav-link:hover {
+  border-bottom: 5px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.hero:before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("./purp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    90deg,
+    #482393 50%,
+    var(--accent-color) 50%
+  );
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  width: 40%;
+  line-height: 0.9;
+  z-index: 1;
+  color: white;
+}
+
+.container {
+  margin: 0 60px;
+}
+
+/* Section styling  */
+section {
+  padding: 100px 0;
+  background-color: rgba(181, 168, 207, 0.201);
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  line-height: 1.6rem;
+  width: 80%;
+  padding: 10px 0;
+  color: #191919;
+}
+
+/* Active Classes  */
+section.active {
+  background-color: #fff;
+  transition: background-color 1s ease-in-out;
+}
+
+section.active h2 {
+  padding: 0px 15px;
+  border-left: 15px solid var(--accent-color);
+  transition: all 1s ease-in-out;
+  letter-spacing: 4px;
+}
+
+.nav-link.active {
+  border-left: 5px solid var(--accent-color);
+  color: var(--accent-color);
+  letter-spacing: 2px;
+  transition: border-left 0.25s ease-in-out, letter-spacing 1s ease-in-out;
+}
+
+/* Footer  */
+footer {
+  height: 100px;
+  background-color: #28183b;
+  z-index: 1;
+}
+
+@media (max-width: 670px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+
+  .nav-link {
+    margin: 10px 5px 5px 5px;
+    padding-left: 4px;
+  }
+
+  .hero:before {
+    height: 80vh;
+  }
+  .hero {
+    height: 80vh;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
