@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@300;400;700;900&display=swap');
 
 :root {
   --accent-color: #342259;
@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 li {
@@ -51,13 +51,13 @@ nav {
 }
 
 .hero:before {
-  content: "";
+  content: '';
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   position: absolute;
-  background-image: url("./purp.jpg");
+  background-image: url('./purp.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.6;
@@ -75,7 +75,7 @@ nav {
 }
 
 h1 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   font-size: 5rem;
   width: 40%;
@@ -85,13 +85,17 @@ h1 {
 }
 
 .container {
-  margin: 0 60px;
+  margin: 0 6rem;
+  /* margin: 0 60px; */
+  max-width: 1500px;
 }
 
 /* Section styling  */
 section {
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 10rem 0;
   background-color: rgba(181, 168, 207, 0.201);
+  min-height: 90vh;
 }
 
 h2 {
@@ -103,9 +107,9 @@ h2 {
 }
 
 p {
-  line-height: 1.6rem;
-  width: 80%;
-  padding: 10px 0;
+  line-height: 2rem;
+  width: 75%;
+  padding: 1rem 0;
   color: #191919;
 }
 
@@ -151,10 +155,10 @@ footer {
   }
 
   .hero:before {
-    height: 80vh;
+    height: 100vh;
   }
   .hero {
-    height: 80vh;
+    height: 100vh;
   }
 
   h1 {
