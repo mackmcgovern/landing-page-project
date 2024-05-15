@@ -41,13 +41,9 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
-  margin: 25px 10px;
-  padding-left: 4px;
-}
-
-.nav-link:hover {
-  border-bottom: 5px solid var(--accent-color);
-  color: var(--accent-color);
+  margin: 30px 10px 25px 10px;
+  padding: 2px 0 2px 4px;
+  border-bottom: 5px solid #34225900;
 }
 
 .hero:before {
@@ -128,9 +124,14 @@ section.active h2 {
 
 .nav-link.active {
   border-left: 5px solid var(--accent-color);
+  border-bottom: none;
   color: var(--accent-color);
   letter-spacing: 2px;
   transition: border-left 0.25s ease-in-out, letter-spacing 1s ease-in-out;
+}
+.nav-link:hover {
+  border-bottom: 5px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Footer  */
